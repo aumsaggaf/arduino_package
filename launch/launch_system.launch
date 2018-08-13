@@ -1,0 +1,6 @@
+<launch>
+
+        <node pkg="arduino_package" name="arduino_button_node" type="serial_node1.py" args="/dev/$(arg a)"/>
+	<node pkg="arduino_package" name="arduino_servo_node" type="serial_node2.py" args="/dev/$(arg b)"/>
+
+</launch>
